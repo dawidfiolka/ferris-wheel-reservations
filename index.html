@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.1" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/jquery.datetimepicker.min.css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.min.js"></script>
+
+  </head>
+  <body>
+    
+  
+
+      <div class="srodek">
+        <svg viewBox="-20 -12 160 140" preserveAspectRatio="xMaxYMax meet">
+          <circle
+            id="circle"
+            cx="60"
+            cy="60"
+            r="50"
+            vector-effect="non-scaling-stroke"
+          />
+          <clipPath id="circle-clip">
+            <use xlink:href="#circle" />
+            
+          </clipPath>
+
+          <g clip-path="url(#circle-clip)">
+            <image
+              xlink:href="./images/bg_01.png"
+              width="75%"
+              height="85%"
+              preserveAspectRatio="xMidYMid"
+            />
+            <use
+              xlink:href="#circle"
+              fill="none"
+              stroke="#0F1C3F"
+              stroke-width="30"
+              opacity="0.25"
+            />
+          </g>
+
+          <animateMotion
+            xlink:href="#seat-orange"
+            dur="20s"
+            begin="0s"
+            fill="freeze"
+            repeatCount="indefinite"
+          >
+            <mpath xlink:href="#motionPath" />
+          </animateMotion>
+
+          <animateMotion
+            xlink:href="#seat-brown"
+            dur="20s"
+            begin="0s"
+            fill="freeze"
+            repeatCount="indefinite"
+          >
+            <mpath xlink:href="#motionPath-2" />
+          </animateMotion>
+
+          <animateMotion
+            xlink:href="#seat-yellow"
+            dur="20s"
+            begin="0s"
+            fill="freeze"
+            repeatCount="indefinite"
+          >
+            <mpath xlink:href="#motionPath-3" />
+          </animateMotion>
+          <animateMotion
+            xlink:href="#seat-green"
+            dur="20s"
+            begin="0s"
+            fill="freeze"
+            repeatCount="indefinite"
+          >
+            <mpath xlink:href="#motionPath-4" />
+          </animateMotion>
+          <animateMotion
+            xlink:href="#seat-blue"
+            dur="20s"
+            begin="0s"
+            fill="freeze"
+            repeatCount="indefinite"
+          >
+            <mpath xlink:href="#motionPath-5" />
+          </animateMotion>
+          <animateMotion
+            xlink:href="#seat-pink"
+            dur="20s"
+            begin="0s"
+            fill="freeze"
+            repeatCount="indefinite"
+          >
+            <mpath xlink:href="#motionPath-6" />
+          </animateMotion>
+
+          <g>
+            <animateTransform
+              attributeType="xml"
+              attributeName="transform"
+              type="rotate"
+              from="0 60 60"
+              to="360 60 60"
+              dur="20s"
+              repeatCount="indefinite"
+            />
+            <line
+              stroke="#000000"
+              stroke-width="1"
+              stroke-miterlimit="10"
+              x1="60"
+              y1="10"
+              x2="60"
+              y2="110"
+            />
+            <line
+              fill="none"
+              stroke="#000000"
+              stroke-width="1"
+              stroke-miterlimit="10"
+              x1="10"
+              y1="60"
+              x2="110"
+              y2="60"
+            />
+            <line
+              fill="none"
+              stroke="#000000"
+              stroke-width="1"
+              stroke-miterlimit="10"
+              x1="103.3"
+              y1="35"
+              x2="16.7"
+              y2="85"
+            />
+            <line
+              fill="none"
+              stroke="#000000"
+              stroke-width="1"
+              stroke-miterlimit="10"
+              x1="35"
+              y1="16.7"
+              x2="85"
+              y2="103.3"
+            />
+            <line
+              fill="none"
+              stroke="#000000"
+              stroke-width="1"
+              stroke-miterlimit="10"
+              x1="85"
+              y1="16.7"
+              x2="35"
+              y2="103.3"
+            />
+            <line
+              fill="none"
+              stroke="#000000"
+              stroke-width="1"
+              stroke-miterlimit="10"
+              x1="16.7"
+              y1="35"
+              x2="103.3"
+              y2="85"
+            />
+
+            <circle
+              fill="none"
+              stroke="#fff"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              cx="60"
+              cy="60"
+              r="50"
+            />
+          </g>
+          <path
+            id="motionPath"
+            fill="none"
+            stroke-width="0"
+            d="M60,10c11.5,0,22.1,3.9,30.5,10.4
+            C102.4,29.5,110,43.9,110,60c0,27.6-22.4,50-50,50S10,87.6,10,60S32.4,10,60,10z"
+          />
+          <path
+            id="motionPath-2"
+            fill="none"
+            stroke-width="0"
+            d="M60,110c-11.5,0-22.1-3.9-30.5-10.4
+            C17.6,90.5,10,76.1,10,60c0-27.6,22.4-50,50-50s50,22.4,50,50S87.6,110,60,110z"
+          />
+          <path
+            id="motionPath-3"
+            fill="none"
+            stroke-width="0"
+            d="M103.3,85c-5.7,10-14.4,17.2-24.3,21.2
+            c-13.8,5.7-30.1,5.1-44-2.9C11.1,89.5,2.9,58.9,16.7,35S61.1,2.9,85,16.7S117.1,61.1,103.3,85z"
+          />
+          <path
+            id="motionPath-4"
+            fill="none"
+            stroke-width="0"
+            d="M103.3,35c5.7,10,7.7,21.1,6.3,31.6
+            c-2,14.8-10.6,28.6-24.6,36.7c-23.9,13.8-54.5,5.6-68.3-18.3S11.1,30.5,35,16.7S89.5,11.1,103.3,35z"
+          />
+          <path
+            id="motionPath-5"
+            fill="none"
+            stroke-width="0"
+            d="M16.7,35C22.4,25,31.1,17.8,41,13.8
+            C54.8,8.1,71,8.6,85,16.7c23.9,13.8,32.1,44.4,18.3,68.3S58.9,117.1,35,103.3S2.9,58.9,16.7,35z"
+          />
+          <path
+            id="motionPath-6"
+            fill="none"
+            stroke-width="0"
+            d="M8.2,76.5c-5.7-10-7.7-21.1-6.3-31.6
+          C3.9,30,12.5,16.3,26.5,8.2C50.4-5.6,81,2.6,94.8,26.5s5.6,54.5-18.3,68.3S22,100.4,8.2,76.5z"
+          />
+          <g id="seat-orange">
+            <path
+              class="seat-top-free"
+              d="M-9-3c0-4.8,3.9-8.7,8.7-8.7S8.5-7.8,8.5-3H-9z"
+            />
+            <path
+              class="seatOrange"
+              d="M17.5,0c0,4.8-3.9,8.7-8.7,8.7S0,4.8,0,0H17.5z"
+              transform="translate(-9 -3)"
+            ></path>
+          </g>
+          <g id="seat-brown">
+            <path
+              class="seat-top-free"
+              d="M-9-3c0-4.8,3.9-8.7,8.7-8.7S8.5-7.8,8.5-3H-9z"
+            />
+            <path class="seatBrown"
+              d="M17.5,0c0,4.8-3.9,8.7-8.7,8.7S0,4.8,0,0H17.5z"
+              transform="translate(-9 -3)"
+            ></path>
+          </g>
+          <g id="seat-yellow">
+            <path
+              class="seat-top-free"
+              d="M-9-3c0-4.8,3.9-8.7,8.7-8.7S8.5-7.8,8.5-3H-9z"
+            />
+            <path class="seatYellow"
+              d="M17.5,0c0,4.8-3.9,8.7-8.7,8.7S0,4.8,0,0H17.5z"
+              transform="translate(-9 -3)"
+            ></path>
+          </g>
+          <g id="seat-green">
+            <path
+              class="seat-top-free"
+              d="M-9-3c0-4.8,3.9-8.7,8.7-8.7S8.5-7.8,8.5-3H-9z"
+            />
+            <path class="seatGreen"
+              d="M17.5,0c0,4.8-3.9,8.7-8.7,8.7S0,4.8,0,0H17.5z"
+              transform="translate(-9 -3)"
+            ></path>
+          </g>
+          <g id="seat-blue">
+            <path
+              class="seat-top-free"
+              d="M-9-3c0-4.8,3.9-8.7,8.7-8.7S8.5-7.8,8.5-3H-9z"
+            />
+            <path
+              class="seatBlue"
+              d="M17.5,0c0,4.8-3.9,8.7-8.7,8.7S0,4.8,0,0H17.5z"
+              transform="translate(-9 -3)"
+            ></path>
+          </g>
+          <g id="seat-pink" transform="translate(-1 5)">
+            <path
+              class="seat-top-free"
+              d="M-9-3c0-4.8,3.9-8.7,8.7-8.7S8.5-7.8,8.5-3H-9z"
+              transform="translate(9 3)"
+            />
+            <path
+              class="seatPink"
+              d="M17.5,0c0,4.8-3.9,8.7-8.7,8.7S0,4.8,0,0H17.5z"
+            ></path>
+          </g>
+          <circle
+            id="circle2"
+            cx="60"
+            cy="60"
+            r="25"
+            vector-effect="non-scaling-stroke"
+          />
+          <clipPath id="circle2-clip">
+            <use xlink:href="#circle2" />
+          </clipPath>
+
+          <g clip-path="url(#circle2-clip)">
+            <image
+              xlink:href="./images/wsb.png"
+              width="100%"
+              height="100%"
+              preserveAspectRatio="xMidYMid slice"
+            />
+            <use
+              xlink:href="#circle2"
+              fill="none"
+              stroke="#0F1C3F"
+              stroke-width="10"
+              opacity="0.25"
+            />
+          </g>
+        </svg>
+        <form id="regForm" action="/action_page.php">
+          <h1>Karasol WSB</h1>
+          <!-- One "tab" for each step in the form: -->
+          <div class="tab">
+            <div>
+              <p class="kolory">Wybierz kolor wagonika:</p>
+            </div>
+                    <div class="wagoniki">
+                    <div><button class="butblue buthoover"></button></div>
+                    <div><button class="butpink buthoover"></button></div>
+                    <div><button class="butbrown buthoover"></button></div>
+                    <div><button class="butyellow buthoover"></button></div>
+                    <div><button class="butgreen buthoover"></button></div>
+                    <div><button class="butorange buthoover"></button></div>
+                    </div>
+
+
+                    
+          </div>
+
+          <div class="tab">
+            <div class="kalendarz">
+              <input id="datetimepicker" class="picker ikona"   type="text" value="Wybierz datę i godzinę">
+            </div>
+          </div>
+          <div class="tab">
+            <p><input placeholder="Imię..." oninput="this.className = ''" name="uname"></p>
+            <p><input placeholder="Nazwisko..." oninput="this.className = ''" name="pword" type="password"></p>
+            <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
+            <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+          </div>
+          <div style="overflow:auto; margin-top: 30px;">
+            <div style="text-align: center;">
+              <button type="button" id="prevBtn" onclick="nextPrev(-1)">Wstecz</button>
+              <button type="button" id="nextBtn" onclick="nextPrev(1)" disabled >Dalej</button>
+              
+<div id="identyfikator" style="display: none">
+	<input type="text" name="nazwa2" disabled>
+	<input type="text" name="nazwa3" disabled>
+</div>
+            </div>
+          </div>
+          <!-- Circles which indicates the steps of the form: -->
+          <div style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+           
+
+          </div>
+        </form>  
+
+      </div>
+
+ 
+      <div>
+      </div>
+ </div>
+          </div>
+
+  </div>
+ </div>
+
+ 
+ 
+<script>
+
+ let butBlue = document.querySelector(".butblue");
+        let seatBlue = document.querySelector(".seatBlue");
+        let butPink = document.querySelector(".butpink");
+        let seatPink = document.querySelector(".seatPink");
+        let butOrange = document.querySelector(".butorange");
+        let seatOrange = document.querySelector(".seatOrange");
+        let butBrown = document.querySelector(".butbrown");
+        let seatBrown = document.querySelector(".seatBrown");
+        let butYellow = document.querySelector(".butyellow");
+        let seatYellow = document.querySelector(".seatYellow");
+        let butGreen = document.querySelector(".butgreen");
+        let seatGreen = document.querySelector(".seatGreen");
+        let button = document.querySelector("#nextBtn")
+        let krok = document.querySelector("span")
+      
+
+
+        
+        document
+          .querySelector(".butblue")
+          .addEventListener("click", function (reserved) {
+            reserved.preventDefault();
+
+            if (butBlue.classList.contains("buttonReserved")) {
+              butBlue.classList.remove("buttonReserved");
+              seatBlue.classList.remove("seatReserved");
+              button.setAttribute('disabled', '');
+              krok.classList.remove("finish");
+             
+              
+             
+            } else {
+              butBlue.classList.add("buttonReserved");
+              seatBlue.classList.add("seatReserved");
+              button.removeAttribute('disabled');
+              
+            }
+          });
+
+        document
+          .querySelector(".butpink")
+          .addEventListener("click", function (reserved) {
+            reserved.preventDefault();
+
+            if (butPink.classList.contains("buttonReserved")) {
+              butPink.classList.remove("buttonReserved");
+              seatPink.classList.remove("seatReserved");
+              button.setAttribute('disabled', '');
+              krok.classList.remove("finish");
+            } else {
+              butPink.classList.add("buttonReserved");
+              seatPink.classList.add("seatReserved");
+              button.removeAttribute('disabled');
+            }
+          });
+
+
+          document
+          .querySelector(".butbrown")
+          .addEventListener("click", function (reserved) {
+            reserved.preventDefault();
+
+            if (butBrown.classList.contains("buttonReserved")) {
+              butBrown.classList.remove("buttonReserved");
+              seatBrown.classList.remove("seatReserved");
+              button.setAttribute('disabled', '');
+              krok.classList.remove("finish");
+            } else {
+              butBrown.classList.add("buttonReserved");
+              seatBrown.classList.add("seatReserved");
+              button.removeAttribute('disabled');
+            }
+          });
+
+
+          document
+          .querySelector(".butyellow")
+          .addEventListener("click", function (reserved) {
+            reserved.preventDefault();
+
+            if (butYellow.classList.contains("buttonReserved")) {
+              butYellow.classList.remove("buttonReserved");
+              seatYellow.classList.remove("seatReserved");
+              button.setAttribute('disabled', '');
+              krok.classList.remove("finish");
+            } else {
+              butYellow.classList.add("buttonReserved");
+              seatYellow.classList.add("seatReserved");
+              button.removeAttribute('disabled');
+            }
+          });
+
+
+          document
+          .querySelector(".butgreen")
+          .addEventListener("click", function (reserved) {
+            reserved.preventDefault();
+
+            if (butGreen.classList.contains("buttonReserved")) {
+              butGreen.classList.remove("buttonReserved");
+              seatGreen.classList.remove("seatReserved");
+              button.setAttribute('disabled', '');
+              
+            } else {
+              butGreen.classList.add("buttonReserved");
+              seatGreen.classList.add("seatReserved");
+              button.removeAttribute('disabled');
+            }
+          });
+
+
+        document
+          .querySelector(".butorange")
+          .addEventListener("click", function (reserved) {
+            reserved.preventDefault();
+
+            if (butOrange.classList.contains("buttonReserved")) {
+              butOrange.classList.remove("buttonReserved");
+              seatOrange.classList.remove("seatReserved");
+              button.setAttribute('disabled', '');
+            } else {
+              butOrange.classList.add("buttonReserved");
+              seatOrange.classList.add("seatReserved");
+              button.removeAttribute('disabled');
+            }
+          });
+</script>
+<script>
+
+$(document).ready(function() {
+              $.datetimepicker.setLocale('pt-BR');
+             $('#datetimepicker').datetimepicker();
+        });
+        $('.ui.calendar').calendar();
+
+
+        $(document).ready(function(){
+    $('#input.timepicker').timepicker({});
+   
+});
+  
+</script>
+<script>
+////////////// progress bar ///////////////////////
+var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the current tab
+
+function showTab(n) {
+  // This function will display the specified tab of the form...
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  //... and fix the Previous/Next buttons:
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Zarezerwuj";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Dalej";
+  }
+  //... and run a function that will display the correct step indicator:
+  fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  // Exit the function if any field in the current tab is invalid:
+  if (n == 1 && !validateForm()) return false;
+  // Hide the current tab:
+  x[currentTab].style.display = "none";
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab + n;
+  // if you have reached the end of the form...
+  if (currentTab >= x.length) {
+    // ... the form gets submitted:
+    document.getElementById("regForm").submit();
+    return false;
+  }
+  // Otherwise, display the correct tab:
+  showTab(currentTab);
+}
+
+function validateForm() {
+  // This function deals with validation of the form fields
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  // A loop that checks every input field in the current tab:
+  for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    if (y[i].value == "") {
+      // add an "invalid" class to the field:
+      y[i].className += " invalid";
+      // and set the current valid status to false
+      valid = false;
+    }
+  }
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  return valid; // return the valid status
+}
+
+function fixStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += " active";
+}
+</script>
+         
+    </div>
+  </body>
+</html>
