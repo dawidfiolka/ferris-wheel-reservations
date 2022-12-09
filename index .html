@@ -1,0 +1,98 @@
+<html>
+    <head>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.simple-dtpicker.js"></script>
+	<link type="text/css" href="jquery.simple-dtpicker.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h4>Cities</h2>
+</header>
+
+<section>
+  <nav>
+    <label><em>Krok 1.</em><b>Wybierz lość osób:</b></label>
+    <br>
+    <br>
+    <label class="container">1
+      <input type="radio" checked="checked" name="radio">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">2
+      <input type="radio" name="radio">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">3
+      <input type="radio" name="radio">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">4
+      <input type="radio" name="radio">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">5
+      <input type="radio" name="radio">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">6
+      <input type="radio" name="radio">
+      <span class="checkmark"></span>
+    </label>
+
+    <div class="formularz">
+
+    </div><label><em>Krok2.</em> <b>Wybierz datę i godzinę:</b></label>
+    <br>
+    <br>
+    <input type="text" name="date17" value="To jest domyślny tekst">
+    <script type="text/javascript">
+      $(function(){
+        $('*[name=date17]').appendDtpicker({
+          "inline": true,
+          "futureOnly": true,
+          "minTime":"16:00",
+          "maxTime":"21:30"
+        });
+      });
+    </script>
+
+<button type="button">Rezerwacja!</button>
+
+
+  </nav>
+  
+  <article>
+    <div class="ferris-wrapper">
+      <span class="kolo_tyl"></span>
+      <span class="kolo_przod"></span>
+      <div class="wheel-wrapper">
+        <div class="wheel">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+    
+          <div id="cab1" class="cabin">1</div>
+          <div id="cab2" class="cabin">2</div>
+          <div id="cab3" class="cabin">3</div>
+          <div id="cab4" class="cabin">4</div>
+          <div id="cab5" class="cabin">5</div>
+          <div id="cab6" class="cabin">6</div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+  </article>
+</section>
+
+<footer>
+
+</footer>
+
+</body>
+</html>
